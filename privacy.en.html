@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy Policy – Jarvis MCP</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #1f2933; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; } td, th { border: 1px solid #d5dbe1; padding: .4rem .5rem; text-align: left; vertical-align: top; }
+  .small { color: #52606d; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy for the app “Jarvis MCP”</h1>
+<p class="small">Effective: 20 October 2026 · Deutsche Fassung: datenschutz.de.html</p>
+
+<h2>1. What this app is</h2>
+<p>“Jarvis MCP” is a private tool that runs only on the operator’s own computer. It connects exclusively the operator’s own Instagram professional accounts (Creator/Business) and helps the operator read direct messages sent to these accounts and prepare replies. The app is not offered to other people, not sold and not used for advertising.</p>
+
+<h2>2. Controller</h2>
+<p>Henrique Medeiros<br>c/o Ricardo Moura<br>Täfernstrasse 26<br>5405 Baden-Dättwil<br>Switzerland<br>Email: info@domainradar.ch</p>
+
+<h2>3. Data we process</h2>
+<table>
+<tr><th>Whose data</th><th>Which data</th><th>Source</th></tr>
+<tr><td>Operator (own accounts)</td><td>Account ID, username, account type, access token</td><td>Instagram login by the operator</td></tr>
+<tr><td>People who message these accounts</td><td>Instagram-scoped ID, username, message content and time, attachments</td><td>Meta (Instagram API), only when the operator requests it</td></tr>
+</table>
+<p>The app only retrieves conversations of the connected own accounts and at most the 20 most recent messages per conversation. It does not query other accounts, contact lists or third-party profiles.</p>
+
+<h2>4. Purpose and legal basis</h2>
+<p>The only purpose is to read and answer messages sent to the operator’s own accounts. The legal basis is the legitimate interest in answering messages sent to these accounts (Art. 6(1)(f) GDPR; Switzerland: processing under the principles of the Federal Act on Data Protection, FADP). There is no advertising, no profiling, no automatic replies and no automated decision-making.</p>
+
+<h2>5. Only a human sends</h2>
+<p>The app only creates reply drafts. A reply is sent only after the operator has reviewed it on his computer and confirmed it by typing “ja” (yes). Replies are only possible in existing conversations within 24 hours of the other person’s last message; first contact and bulk messaging are technically blocked.</p>
+
+<h2>6. Storage and retention</h2>
+<table>
+<tr><th>What</th><th>Where and how</th><th>How long</th></tr>
+<tr><td>Access token per account</td><td>local only, encrypted with Windows DPAPI</td><td>until the account is disconnected; a token is valid for at most 60 days and is refreshed</td></tr>
+<tr><td>Message content</td><td>not stored by the app, only retrieved for display</td><td>–</td></tr>
+<tr><td>Reply drafts (text or reference to an own image)</td><td>local only, encrypted with Windows DPAPI</td><td>at most 2 hours, then deleted automatically</td></tr>
+<tr><td>Send log to prevent duplicates</td><td>local only, checksums and status, no text</td><td>30 days</td></tr>
+</table>
+<p>Usernames are checked locally against an exclusion list that contains only checksums; nothing is stored in the process. The app has no cloud database and no analytics or tracking services. Only when the operator sends one of his own images is it made available (without metadata) for at most 5 minutes at a random address so that Meta can fetch it.</p>
+
+<h2>7. Recipients and international transfers</h2>
+<ul>
+<li><strong>Meta Platforms</strong> (Instagram): delivers the messages and delivers replies that are sent. Meta’s terms apply.</li>
+<li><strong>Anthropic PBC, USA</strong>: the operator uses the app inside his AI assistant (Claude). Retrieved messages are transmitted to Claude so they can be displayed and reply drafts can be written. This is a transfer of data to the USA (Art. 16 f. FADP; Chapter V GDPR). Safeguards and retention at Anthropic are governed by Anthropic’s terms and privacy policy (anthropic.com/legal/privacy).</li>
+</ul>
+<p>No other data is shared, sold or used for advertising.</p>
+
+<h2>8. Your rights</h2>
+<p>You may request access to, correction or deletion of your data and object to the processing: info@domainradar.ch. You may also lodge a complaint with a supervisory authority (Switzerland: FDPIC; EU: the authority of your country of residence). How data is deleted is described on the “Data deletion” page (data-deletion.html).</p>
+
+<h2>9. Revoking access</h2>
+<p>The operator can disconnect at any time: locally, “trennen” (disconnect) deletes the token and all pending drafts; access is revoked permanently in the Instagram app under Settings › Apps and websites.</p>
+
+<h2>10. Changes</h2>
+<p>If the way the app works changes, this policy will be updated and the date above changed.</p>
+</body>
+</html>
